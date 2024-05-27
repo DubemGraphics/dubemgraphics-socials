@@ -1,0 +1,195 @@
+:root{
+  --polor: #5927E5;
+  --scolor: #B0A8B9;
+  --n1color: #E5E4E2;
+  --n2color: #1b1b1b;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/font/Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--scolor);
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+a{
+  text-decoration: none;
+}
+
+.illustration{
+  display: none;
+}
+
+.wrapper{
+  background-color: var(--n1color);
+  width: 300px;
+  margin: 4em auto;
+  border-radius: .5em;
+  padding: 2.5em 1.5em;
+}
+
+.main{
+  text-align: center;
+  margin: auto;
+}
+
+.info img{
+  width: 10rem;
+  margin: 1.5rem 0;
+}
+
+.info h1{
+  font-size: .8rem;
+  color: var(--n2color);
+}
+
+.socials{
+  margin: 2.5rem auto;
+  margin-bottom: 0;
+}
+
+.socials h2{
+  font-size: 1rem;
+  margin: 0 0 1em 0;
+}
+
+.socials .links{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: fit-content;
+}
+
+.links a{
+  width: fit-content;
+}
+
+.links a:hover{
+  opacity: .8;
+}
+
+
+
+.links img{
+  width: 50px;
+}
+
+
+
+
+@media screen and (min-width: 425px) {
+  .wrapper{
+    background-color: var(--n1color);
+    width: 320px;
+    margin: 4em auto;
+    border-radius: .5em;
+    padding: 2.5em 1.75em;
+  }
+  
+  
+  .info h1{
+    font-size: .9rem;
+    color: var(--n2color);
+  }
+  
+  .socials{
+    margin: 3rem auto;
+    margin-bottom: 0;
+  }
+  
+  .socials h2{
+    font-size: 1.25rem;
+    margin: 0 0 1.5em 0;
+  }
+  
+  .socials .links{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: fit-content;
+  }
+  
+  .links img{
+    width: 55px;
+  }
+  
+}
+
+
+
+@media screen and (min-width: 1023px){
+  .wrapper{
+    background-color: var(--n1color);
+    width: 600px;
+    margin: 3em auto;
+    border-radius: .5em;
+    padding: 1em 1.5em;
+  }
+  
+  .main{
+    text-align: center;
+    margin: auto;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .info img{
+    width: 7.5rem;
+    margin: .5rem 0;
+  }
+  
+  .info h1{
+    font-size: .8rem;
+    color: var(--n2color);
+  }
+
+  .illustration{
+    display: block;
+    width: 60%;
+    
+    margin: auto;
+  }
+
+  .socials{
+    margin: 1.5rem auto;
+    margin-bottom: 0;
+  }
+  
+  .socials h2{
+    font-size: 1rem;
+    margin: 0 0 1em 0;
+  }
+  
+  .socials .links{
+    margin: auto;
+    display: flex;
+    width: fit-content;
+  }
+  
+  .links a{
+    width: fit-content;
+  }
+  
+  .links img{
+    width: 50px;
+  }
+
+}
